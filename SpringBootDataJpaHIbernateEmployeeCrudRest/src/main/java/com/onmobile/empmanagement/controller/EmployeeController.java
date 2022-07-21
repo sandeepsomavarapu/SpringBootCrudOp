@@ -25,6 +25,7 @@ public class EmployeeController {
 
 	@PostMapping("/insertEmployees") // http://localhost:7687/employee/addEmployee
 	public String createEmployee(@Valid @RequestBody Employee emp) {
+		System.out.println("PR");
 		return service.employeeCreation(emp);
 	}
 
