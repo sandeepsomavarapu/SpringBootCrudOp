@@ -12,6 +12,7 @@ public interface EmployeeDao extends JpaRepository<Employee, Integer> {
 	List<Employee> findByCompany(String orgName);
 
 	List<Employee> findBySalaryBetween(long minSal, long maxSal);
+	System.out.println("Rahul changes");
 	
 //	@Query("select e from Employee e where e.company=?1")
 //	List<Employee> getByCompany123(String orgName);
