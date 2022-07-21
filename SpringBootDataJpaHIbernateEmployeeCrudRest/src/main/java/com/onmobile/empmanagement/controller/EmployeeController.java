@@ -18,7 +18,7 @@ import com.onmobile.empmanagement.model.Employee;
 import com.onmobile.empmanagement.service.EmployeeService;
 
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/emp")
 public class EmployeeController {
 	@Autowired
 	EmployeeService service;
