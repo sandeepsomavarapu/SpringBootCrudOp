@@ -33,7 +33,7 @@ public class EmployeeController {
 		return service.updateEmployee(emp);
 	}
 
-	@DeleteMapping("/deleteEmployee/{id}") // http://localhost:7687/employee/deleteEmployee/123
+	@DeleteMapping("/removeEmployee/{id}") // http://localhost:7687/employee/deleteEmployee/123
 	public String deleteEmployee(@PathVariable("id") int empId) {
 		return service.deleteById(empId);
 	}
