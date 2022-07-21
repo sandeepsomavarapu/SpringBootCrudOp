@@ -38,7 +38,7 @@ public class EmployeeController {
 		return service.deleteById(empId);
 	}
 
-	@GetMapping("/getEmployee/{id}") // http://localhost:7687/employee/getEmployee/123
+	@GetMapping("/fetchEmployee/{id}") // http://localhost:7687/employee/getEmployee/123
 	public Employee getEmployee(@PathVariable("id") int empId) {
 		return service.getEmployeeById(empId);
 	}
