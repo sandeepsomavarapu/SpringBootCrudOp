@@ -28,7 +28,7 @@ public class EmployeeController {
 		return service.employeeCreation(emp);
 	}
 
-	@PutMapping("/updateEmployee") // http://localhost:7687/employee/updateEmployee
+	@PutMapping("/mergeEmployee") // http://localhost:7687/employee/updateEmployee
 	public String updateEmployee(@RequestBody Employee emp) {
 		return service.updateEmployee(emp);
 	}
