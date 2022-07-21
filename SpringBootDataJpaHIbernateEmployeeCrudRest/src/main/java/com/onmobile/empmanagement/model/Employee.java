@@ -68,6 +68,7 @@ public class Employee {
 	}
 
 	public String getCompany() {
+		syso("checking commit and pull");
 		return company;
 	}
 
