@@ -23,17 +23,17 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService service;
 
-	@PostMapping("/addEmployees") // http://localhost:7687/employee/addEmployee
+	@PostMapping("/insertEmployees") // http://localhost:7687/employee/addEmployee
 	public String createEmployee(@Valid @RequestBody Employee emp) {
 		return service.employeeCreation(emp);
 	}
 
-	@PutMapping("/updateEmployee") // http://localhost:7687/employee/updateEmployee
+	@PutMapping("/mergeEmployee") // http://localhost:7687/employee/updateEmployee
 	public String updateEmployee(@RequestBody Employee emp) {
 		return service.updateEmployee(emp);
 	}
 
-	@DeleteMapping("/deleteEmployee/{id}") // http://localhost:7687/employee/deleteEmployee/123
+	@DeleteMapping("/removeEmployee/{id}") // http://localhost:7687/employee/deleteEmployee/123
 	public String deleteEmployee(@PathVariable("id") int empId) {
 		return service.deleteById(empId);
 	}
