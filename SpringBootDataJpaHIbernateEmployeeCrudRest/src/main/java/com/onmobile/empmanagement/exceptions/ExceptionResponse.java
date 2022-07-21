@@ -30,7 +30,7 @@ public class ExceptionResponse {
 	public LocalDateTime getTime() {
 		return time;
 	}
-
+	// No comments here
 	public void setTime(LocalDateTime time) {
 		this.time = time;
 	}
