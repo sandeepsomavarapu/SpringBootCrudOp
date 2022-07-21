@@ -23,7 +23,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService service;
 
-	@PostMapping("/addEmployee") // http://localhost:7687/employee/addEmployee
+	@PostMapping("/addEmployees") // http://localhost:7687/employee/addEmployee
 	public String createEmployee(@Valid @RequestBody Employee emp) {
 		return service.employeeCreation(emp);
 	}
