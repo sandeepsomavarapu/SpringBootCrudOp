@@ -43,7 +43,7 @@ public class EmployeeController {
 		return service.getEmployeeById(empId);
 	}
 
-	@GetMapping("/getAll") // http://localhost:7687/employee/getAll
+	@GetMapping("/getAllEmployees") // http://localhost:7687/employee/getAll
 	public List<Employee> getAllEmployees() {
 		return service.getAllEmployee();
 	}
